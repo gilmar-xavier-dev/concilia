@@ -201,7 +201,7 @@ int main(int argc, char *argv[])
 	     }
     }
     
-  conta = 0;
+    conta = 0;
     retorno = 0;
 	  while (!retorno)
 	  {
