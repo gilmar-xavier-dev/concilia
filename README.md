@@ -1,6 +1,7 @@
 # concilia
 
 Use o formato: !!!
+
 ./concilia ARQUIVO|-stdin -k X.Y,Z [-k X.Y,Z] -in|-out [-debug] [-ign 999] [-sep S] !!!
 
 Sendo:
@@ -22,4 +23,4 @@ Exemplo:
    arquivo2.txt-sim
    Os registros não conciliados estarão em:
    arquivo2.txt-nao
-     
+   
