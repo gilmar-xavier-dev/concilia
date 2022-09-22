@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <db.h>
+
 #include "concilia_global.h"
 
 #define TAMLIN 4096
@@ -79,7 +81,7 @@ int separaChave(char entrada[])
     return 0;
 } 
 
-int validaParam(int argc, const char **argv)
+int validaParam(int argc, char **argv)
 {
     char tudo[128];
     char *separados[5];
@@ -87,19 +89,29 @@ int validaParam(int argc, const char **argv)
     int inda=0,indc=0,indb=0;
 
     contaKey = 0;	
+
+    flagOperacao = 0;
     qtdIgnorar = 0;
 	for (inda=0;inda<argc;inda++)
     {
+        if (!strcmp(argv[inda],"-in"))
+        {
+            flagOperacao = 1;
+        }
+        if (!strcmp(argv[inda],"-out"))
+        {
+            flagOperacao = 2;
+        }
         if (!strcmp(argv[inda],"-debug"))
         {
             flagDepurar = 1;
         }
-        if (!strcmp(argv[inda],"-i"))
+        if (!strcmp(argv[inda],"-ign"))
         {
             indc = inda+1;
             qtdIgnorar = atoi(argv[indc]);
         }
-        if (!strcmp(argv[inda],"-t"))
+        if (!strcmp(argv[inda],"-sep"))
         {
             indc = inda+1;
             memset(&separador,0,sizeof(separador));
