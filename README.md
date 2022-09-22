@@ -1,8 +1,16 @@
 # concilia
 
-Use o formato: !!!
+Faz a conciliação entre arquivos texto, sem necessidade de carga ou de qualquer tratamento prévio nos arquivos.
 
-./concilia ARQUIVO|-stdin -k X.Y,Z [-k X.Y,Z] -in|-out [-debug] [-ign 999] [-sep S] !!!
+Faz a conciliação baseada em chaves informadas por parâmetro na chamada do aplicativo.
+
+Os arquivos podem ser com campos separados (CSV) por qualquer separador ou ainda arquivos de tamanho fixo.
+
+Milhões de registros podem ser conciliados com uma excelente performance.
+
+Use o formato:
+
+./concilia ARQUIVO|-stdin -k X.Y,Z [-k X.Y,Z] -in|-out [-debug] [-ign 999] [-sep S]
 
 Sendo:
 
