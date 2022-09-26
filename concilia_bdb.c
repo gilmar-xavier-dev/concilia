@@ -40,7 +40,7 @@ int acessaBanco()
 
     int retval=0;
 
-    retval = db_create(&concilia_db, NULL, 0);
+    retval = db_create(&concilia_db, NULL, 0); 
     if(retval!=0)
     {
         printf("db_create: %s\n", db_strerror(retval));
