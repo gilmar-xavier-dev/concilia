@@ -36,12 +36,15 @@ Sendo:
    
    
 Exemplo:
+
    `./concilia arqent.txt -in  -k 1.11,18 -k 1.42,18 -k 1.76,6`
    
    `./concilia arqsai.txt -out -k 1.10,18 -k 1.41,18 -k 1.75,6`
    
    Os registros conciliados estarão em:
+
       *arqsai.txt-sim*
       
    Os registros **não** conciliados estarão em:
+   
       *arqsai.txt-nao*
