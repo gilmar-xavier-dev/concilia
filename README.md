@@ -16,7 +16,7 @@ Desenvolvido para ser utilizado com três possíveis bancos de dados NoSql, bast
 
 `make gbdm` - Utiliza [GBDM](https://www.gnu.org.ua/software/gdbm/) para a indexação.
 
-Use o formato:
+Para execuçã, use o formato:
 
 `./concilia ARQUIVO|-stdin -k X.Y,Z [-k X.Y,Z] -in|-out [-debug] [-ign 999] [-sep S]`
 
