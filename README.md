@@ -10,11 +10,11 @@ Milhões de registros podem ser conciliados com uma excelente performance.
 
 Desenvolvido para ser utilizado com três possíveis bancos de dados NoSql, bastando informar o BD desejado no momento da compilação, sendo:
 
-`make bdb` - Utiliza *BERKELEYDB* para a indexação.
+`make bdb` - Utiliza [BERKELEYDB](https://www.oracle.com/database/technologies/related/berkeleydb.html) para a indexação.  
 
-`make redis` - Utiliza *REDIS* para a indexação.
+`make redis` - Utiliza [REDIS](https://redis.io/) para a indexação.
 
-`make gbdm` - Utiliza *GBDM* para a indexação.
+`make gbdm` - Utiliza [GBDM](https://www.gnu.org.ua/software/gdbm/) para a indexação.
 
 Use o formato:
 
@@ -46,5 +46,5 @@ Exemplo:
       *arqsai.txt-sim*
       
    Os registros **não** conciliados estarão em:
-   
+
       *arqsai.txt-nao*
