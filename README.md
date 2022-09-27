@@ -14,7 +14,7 @@ Desenvolvido para ser utilizado com três possíveis bancos de dados NoSql, bast
 
 `make redis` - Utiliza [REDIS](https://redis.io/) para a indexação.
 
-`make gbdm` - Utiliza [GBDM](https://www.gnu.org.ua/software/gdbm/) para a indexação.
+`make gbdm` - Utiliza [GDBM](https://www.gnu.org.ua/software/gdbm/) para a indexação.
 
 Para execução, use o formato:
 
