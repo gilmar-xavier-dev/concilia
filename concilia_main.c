@@ -22,8 +22,6 @@ int main(int argc, char* argv[])
 
     int result=0, retorno=0,conta=0;
 
-//    char strEntrada[] = "teste;DESSA;coisa;TENTANDO;saber;COMO;funciona";
-        
     char ARQUIV[128];
     char ARQSIM[128];
     char ARQNAO[128];
@@ -159,7 +157,7 @@ int main(int argc, char* argv[])
             result = gravaBanco(chavew, lin);
             if(result != 0)
             {
-                printf("Erro na gravacao do banco !!!\n"); 
+                printf("Erro na gravacao do banco, possível registro duplicado:\n%s\n",lin); 
                 return -1;
             }
         }
