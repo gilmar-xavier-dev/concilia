@@ -4,7 +4,7 @@ Faz a conciliação entre arquivos texto, sem necessidade de carga ou de qualque
 
 Faz a conciliação baseada em chaves informadas por parâmetro na chamada do aplicativo.
 
-Os arquivos podem ser com campos separados (CSV) por qualquer separador ou ainda arquivos de tamanho fixo.
+Os arquivos podem ser com campos separados por qualquer separador  (CSV) ou ainda arquivos de tamanho fixo.
 
 Milhões de registros podem ser conciliados com uma excelente performance.
 
@@ -16,7 +16,7 @@ Desenvolvido para ser utilizado com três possíveis bancos de dados NoSql, bast
 
 `make gbdm` - Utiliza [GBDM](https://www.gnu.org.ua/software/gdbm/) para a indexação.
 
-Para execuçã, use o formato:
+Para execução, use o formato:
 
 `./concilia ARQUIVO|-stdin -k X.Y,Z [-k X.Y,Z] -in|-out [-debug] [-ign 999] [-sep S]`
 
